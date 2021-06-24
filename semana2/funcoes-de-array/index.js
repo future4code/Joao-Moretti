@@ -76,3 +76,5 @@ return `Compre ${item.nome} por ${item.preco}`
  }
  )
  console.log(ipe2)
+
+ //feitos
