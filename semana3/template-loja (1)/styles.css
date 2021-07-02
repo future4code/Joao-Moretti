@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.chamada {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 60px;
+}
+
+.chamada h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    
+}
+.chamada p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A485E1;
+    font-size: 18px;
+    
+  
+    
+}
+
+.links{
+    text-align: center;
+    height: 50px;
+    
+
+}
+.links > a{
+    width: 32%;
+    float: left;
+    border: 1px solid purple;
+    background-color: purple;
+    margin: 10px 0 10px 10px;
+    padding: 20px;
+    color: white;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}
+
+.rodape{
+    background-color:#A485E1;
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.rodape p{
+    color: white;
+    display: inline;
+    border: purple;
+    border-radius: 10px;
+    margin-left: 1200px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: purple;
+    padding: 5px;
+    
+}
+
+.rodape-img{
+    text-align: right;
+}
+
+.loja{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.geek{
+    padding: 30px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gabriela', serif;
+    background-color: black;
+
+}
+
+.titulo {
+    color: white;
+    display: inline;
+    border: #A485E1;
+    border-radius: 10px;
+    background-color: #A485E1;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin-left: 43%;
+    
+}
+
+table {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    
+}
+td, th{
+    padding: 40px;
+    border: 2px solid black;
+}
+
+.formulario {
+    position: relative;
+    top: 40px;
+    margin: auto;
+    background-color: lightgray;
+    border:1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    width: 44%;
+    
+}
+.form {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.form label{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+     
+.form input {
+    width: 100%;
+    padding: 5px;
+}
+
+.form-add button{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
