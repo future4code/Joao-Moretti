@@ -52,7 +52,7 @@ div img {
     background-color: #c44f00;
 }
 
-.container {
+.container {  
     height: 500px;
     text-align: center;
 }
@@ -71,6 +71,8 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    padding-top:150px;
+    
 }
 
 #container-de-descricao>ol {
