@@ -1,0 +1,34 @@
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    main {
+            display: grid;
+            grid-template-columns: 1fr ;
+            overflow: auto;
+            
+        }
+        
+        
+            }
+
+            @media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+                /* tablets */
+                main {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    overflow: auto;
+                }
+            }        
+            
+            @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+                /* celulares */
+                
+                }
+                .midia > video {
+                    width: 100%;
+                    height: 100vh;
+                }
+
+                
+                    
+                
+                
