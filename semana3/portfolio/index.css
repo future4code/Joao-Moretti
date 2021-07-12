@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.heade {
+
+    color: white;
+    background-color:#242323;
+    padding: 15px;
+    text-align: center;
+    
+    
+}
+.heade p{
+    font-family: 'Lobster', cursive;
+    font-size:40px;
+}
+
+.fundo {
+    color:white ;
+    text-align: center;
+    background-color: black;
+    padding: 24%;
+    background: url(/img/pexels-cottonbro-4430311\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.fundo h1,h2>p{
+    position: relative;
+    margin-top: -200px;
+    
+}
+
+
+.fundo h1{   
+    color:white;
+    
+    font-size: 70px;
+    font-family: 'Zen Loop', cursive;
+    
+}
+
+.fundo h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 35px;
+    font-family: 'Tourney', cursive;
+}
+
+p {
+    font-family: 'Zen Loop', cursive;
+    font-size:30px ;
+}
+
+.eu {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color:snow ;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+}
+
+.eu h3{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+
+}
+
+.curso {
+    padding-top: 20px;
+    text-align: center;
+    background-color:#F1EAFF;
+    padding-bottom: 80px;
+}
+
+.curso h3{
+    
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom:20px ;
+    
+    
+}
+
+.curso p {
+    padding-bottom:50px ;
+}
+
+.itens {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    margin-top: 50px;
+    background-color:white;
+    padding: 30px;
+    margin-right: 40%;
+    margin-left: 40%;
+    border-radius: 10px;
+    margin: auto;
+    margin-right: 200px;
+    height: 210px;
+    box-shadow: 0 2px 3px 0 rgb(128, 120, 120, 0.5);
+    transition:all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+}
+
+.itens::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(128, 120, 120, 0.7) ;
+    transition:all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1;
+
+}
+.itens:hover{
+    transform:scale(1.25,1.25) ;
+}
+
+.itens h4{
+    
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: -20px;
+}
+
+.itens p{
+    
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    text-align: center;
+   
+}
+
+.outro {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    margin-right: 40%;
+    margin-left: 40%;
+    border-radius: 10px;
+    margin: auto;
+    height: 210px;
+    box-shadow: 0 2px 3px 0 rgb(128, 120, 120, 0.5);
+    transition:all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+.outro::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgb(128, 120, 120, 0.7) ;
+    transition:all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1;
+
+}
+.outro:hover{
+    transform:scale(1.25,1.25) ;
+}
+
+.outro h4{
+     
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: -20px;
+
+}
+
+.outro p {
+    
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.obras {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.obras h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.conteudo {
+    background-color: #FFF8F8;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-radius: 10px;
+    padding: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    text-align: center;
+    padding: 100px;
+    background-color:#F1EAFF ;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 200px;
+    
+    
+}
+
+ #text {
+
+    width: 1200px;
+    height: 200px;
+    resize: none;
+}
+
+.formulario h3 {
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.formulario p{
+    padding-bottom: 25px;
+}
+
+.formu {
+    padding-bottom: 20px;
+}
+
+input {
+    padding: 20px;
+    width: 600px;
+}
+
+.mensagem {
+    margin: auto;
+
+}
+
+button {
+    background-color:  red;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    float: right;
+    margin-right: 249px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 15px;
+    
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    opacity: 0.5;
+}
+
+.ultimo {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 40px;
+}
+
+.ultimo p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.fotos{
+    display: block;
+    padding-right: 5px;
+}
+.insta>img{
+    width: 40px;
+}
+.fotos a{
+    padding-right: 10px;
+}
