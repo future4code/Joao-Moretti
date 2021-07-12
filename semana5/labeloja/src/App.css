@@ -1,0 +1,167 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1B1B1B;
+}
+
+
+.tela-inteira {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 5%;
+}
+
+.logo h1{
+  color: white;
+  font-size: 20px;
+
+}
+
+header input{
+  border: none;
+  width: 500px;
+  height: 25px;
+  color: white;
+  background-color: #1B1B1B;
+}
+header button {
+  margin-right: 0;
+  height: 27px;
+  background-color:#494949;
+  border: none;
+}
+
+.logo img {
+  
+  width: 15px;
+}
+
+
+.pesquisar {
+  position: relative;
+  right: 30%;
+}
+
+.pesquisar img{
+  width: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+main {
+  min-height: 80%;
+  display: flex;
+}
+
+.menu-vertical {
+  padding: 30px;
+  flex-basis: 200px;
+  border-right-style: solid;
+  border-right-width: thin;
+  color: white;
+}
+
+.botoes-meunu-vertical {
+  list-style-type: none;
+}
+
+.painel-de-videos {
+  padding-left: 20px;
+  padding-top: 20px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 24.8% 0.2%);
+  grid-template-rows: repeat(4, 270px 20px);
+}
+
+.media1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.media2 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.media3 {
+  grid-column-start: 5;
+  grid-row-start: 1;
+}
+
+.media4 {
+  grid-column-start: 7;
+  grid-row-start: 1;
+}
+
+.media5 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.media6 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.media7 {
+  grid-column-start: 5;
+  grid-row-start: 3;
+}
+
+.media8 {
+  grid-column-start: 7;
+  grid-row-start: 3;
+}
+
+
+.box-pagina-principal {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 1fr;
+  /* border-style: solid;
+  border-width: thin;  */
+  align-items: start;
+  justify-items: stretch;
+  /* margin-left: 20px; */
+  /* margin-right: 20px;
+  margin-top: 50px; */
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+
+footer {
+  height: 10%;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+footer > h4{
+  margin: auto;
+}
+
+.box-pagina-principal > img {
+  width: 100%;
+  height: 200px;
+}
+
+h4 {
+  color: white;
+  margin-left: 20px;
+}
+
