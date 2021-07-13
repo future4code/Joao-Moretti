@@ -1,0 +1,17 @@
+.exercicio img{
+    width: 25px;
+    
+}
+
+.exe1{
+    display: flex;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+.exe2 {
+    display: flex;
+    padding: 25px;
+    border: 1px solid black;
+    width: 80vh;
+}
