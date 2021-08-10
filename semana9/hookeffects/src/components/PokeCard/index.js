@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function PokeCard() {
+export default function PokeCard(props) {
     const [pokemon, setPokemon] = useState({})
 
     const  pegaPokemon = pokeName => {
@@ -18,17 +18,15 @@ export default function PokeCard() {
     };
 
 
-    useEffect((props) => {
-        pegaPokemon(props.pokemon);
+    // useEffect((props) => {
+    //     pegaPokemon(props.pokemon);
 
-    }, [])
+    // }, [])
 
-    useEffect((prevProps, props) => {
-
-        if (prevProps.pokemon !== props.pokemon) {
+    useEffect(() => { 
             pegaPokemon(props.pokemon);
-        }
-    }, [])
+ 
+    }, [props.pokemon])
 
 
     const pokemons = pokemon;
