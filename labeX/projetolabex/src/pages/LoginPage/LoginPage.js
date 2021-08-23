@@ -1,34 +1,30 @@
-import React, { useState } from "react"
+import React from "react"
 import { useHistory } from "react-router-dom"
 import axios from "axios"
 import {aluno} from "../../consts/consts"
+import useForm from "../../hooks/UseForm"
 
 function LoginPage() {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
     const history = useHistory()
+    const {form, onChange, cleanForm} = useForm({
+        email:"", 
+        password:""
+    })
 
-    const onChangeEmail = (event) => {
-        setEmail(event.target.value)
-    }
-
-    const onChangePassword = (event) => {
-        setPassword(event.target.value)
-    }
     const goToBack = () => {
         history.goBack()
     }
 
-    const submitLogin = () => {
+    const submitLogin = (event) => {
+        event.preventDefault()
         const body = {
-            email: email,
-            password: password
+            ...form
         }
-
         axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/${aluno}/login`, body)
         .then((res) => {
             console.log('Deu certo', res.data.token)
             window.localStorage.setItem('token', res.data.token)
+            cleanForm()
             history.push("/adminPage")
         })
         .catch((error) => {
@@ -39,20 +35,28 @@ function LoginPage() {
   return (
     <div>
       <h1>Login</h1>
+
+      <form onSubmit={submitLogin}>
       <input 
-      type='email'
-      value={email}
-      onChange={onChangeEmail}
+      name={'email'}
+      type={'email'}
+      value={form.email}
+      onChange={onChange}
       placeholder={'E-mail'}
+      required
       />
 
       <input 
-      type='password'
-      value={password}
-      onChange={onChangePassword}
+      name={'password'}
+      type={'password'}
+      value={form.password}
+      onChange={onChange}
       placeholder={'Senha'}
+      required
       />
-      <button onClick={submitLogin}>Enviar</button>
+      <button>Enviar</button>
+      </form>
+
       <br/>
       <button onClick={goToBack}>Voltar</button>
     </div>
