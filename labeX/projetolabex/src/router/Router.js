@@ -6,15 +6,24 @@ import ApplicationFormPage from "../pages/ApplicationFormPage/ApplicationFormPag
 import LoginPage from "../pages/LoginPage/LoginPage"
 import AdminHomePage from "../pages/AdminHomePage/AdminHomePage"
 import CreateTripPage from "../pages/CreateTripPage/CreateTripPage"
+import styled from "styled-components"
+import TripDetailsPage from "../pages/TripDetailsPage/TripDetailsPage"
 
-
+const AppContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+`
 
 function Router() {
   return (
+      
       <BrowserRouter>
+
+      <AppContainer>
+
       <Switch>
-
-
       <Route exact path={"/"}>
         <HomePage />
       </Route>
@@ -22,6 +31,7 @@ function Router() {
       <Route exact path={"/trips/list"}>
         <ListTripsPage />
       </Route>
+
 
       <Route exact path={"/trips/application"}>
         <ApplicationFormPage />
@@ -38,8 +48,16 @@ function Router() {
       <Route exact path={"/admin/trips/create"}>
         <CreateTripPage />
       </Route>      
+      
+      <Route exact path={"/admin/trips/:id"}>
+        <TripDetailsPage />
+      </Route>
 
-      </Switch>      
+
+      </Switch>    
+
+      </AppContainer>
+
       </BrowserRouter>
   )
 }

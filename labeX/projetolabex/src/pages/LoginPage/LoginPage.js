@@ -3,6 +3,9 @@ import { useHistory } from "react-router-dom"
 import axios from "axios"
 import {aluno} from "../../consts/consts"
 import useForm from "../../hooks/UseForm"
+import Button from '@material-ui/core/Button';
+import { TextField, Typography } from "@material-ui/core"
+import { Form } from "./styles"
 
 function LoginPage() {
     const history = useHistory()
@@ -34,31 +37,33 @@ function LoginPage() {
 
   return (
     <div>
-      <h1>Login</h1>
+    <Typography variant="h2">Login</Typography>
 
-      <form onSubmit={submitLogin}>
-      <input 
+      <Form onSubmit={submitLogin}>
+      <TextField 
+      label="E-mail"
       name={'email'}
       type={'email'}
       value={form.email}
       onChange={onChange}
-      placeholder={'E-mail'}
+    //   placeholder={'E-mail'}
       required
       />
 
-      <input 
+      <TextField 
+      label="Senha"
       name={'password'}
       type={'password'}
       value={form.password}
       onChange={onChange}
-      placeholder={'Senha'}
+    //   placeholder={'Senha'}
       required
       />
-      <button>Enviar</button>
-      </form>
+      <Button variant="contained" color="primary">Enviar</Button>
+      </Form>
 
       <br/>
-      <button onClick={goToBack}>Voltar</button>
+      <Button variant="outlined" color="default" onClick={goToBack}>Voltar</Button>
     </div>
   )
 }
