@@ -1,11 +1,30 @@
-import react from "react";
-import Home from "./pages/home/Home";
+import GlobalState from "./globals/GlobalState";
+import Router from "./router/Router";
+import { createGlobalStyle } from 'styled-components';
+import Header from "./components/Header";
+ 
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+  }
+
+  p {
+    margin: 0;
+  }
+`;
+
 
 function App() {
   return (
-    <div>
-      app
-    </div>
+    <GlobalState>
+      <GlobalStyle/>
+      <Header />
+      <Router />
+      
+    </GlobalState>
   );
 }
 
