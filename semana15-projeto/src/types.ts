@@ -1,7 +1,7 @@
 export type Client = {
 
     name: string,
-    CPF: number,
+    CPF: string,
     dateOfBirth: Date,
     balance: number,
     statement: Transaction[]
