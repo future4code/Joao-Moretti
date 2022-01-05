@@ -1,10 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Router from "./routes/Router";
+import { createGlobalStyle } from 'styled-components';
 
-function App() {
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+`;
+
+const App = () => {
   return (
     <div>
-      teste
+      <GlobalStyle />
+      <Router />
     </div>
   );
 }
