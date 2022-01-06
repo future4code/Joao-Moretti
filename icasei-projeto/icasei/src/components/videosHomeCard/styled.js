@@ -22,7 +22,7 @@ export const ThumbContainer = styled.div`
     justify-content: center;
 
     img{
-        width: 25em;
+        width: 85%;
         
         :hover {
             cursor: pointer;

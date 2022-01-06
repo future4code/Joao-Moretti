@@ -22,6 +22,7 @@ export const ButtonContainer = styled.div`
 
     width: 20vw;
     margin: auto;
+    margin-top: 16px;
 
   
 
@@ -33,6 +34,7 @@ export const ButtonContainer = styled.div`
 
 export const Text = styled.h1`
     text-align: center;
+    font-family: 'Rock 3D', cursive;
 `
 
 export const VideosContainer = styled.div`

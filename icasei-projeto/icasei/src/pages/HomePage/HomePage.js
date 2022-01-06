@@ -7,6 +7,7 @@ import axios from "axios"
 import { API_KEY } from "../../constants/apiKey"
 import VideosHomeCard from "../../components/videosHomeCard/VideosHomeCard";
 
+
 const HomePage = () => {
 
 
@@ -23,7 +24,7 @@ const HomePage = () => {
               type: "video",
               part: "snippet",
               q: search,
-              maxResults: 6
+              maxResults: 9
             }
           })
         .then((response) => {
