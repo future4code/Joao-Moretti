@@ -13,8 +13,8 @@ const DetailsPage = () => {
     const [videoDetail, setVideoDetail] = useState({})
 
 
-    console.log("deu bom" , videoDetail && videoDetail.items && videoDetail.items.snippet)
-    // const getDetailsVideo = () => {
+    console.log("deu bom" , videoDetail && videoDetail.snippet)
+    // const getDetailsVideo = () => {tems
     //     axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${params.videoId}&part=snippet,statistics&key=${API_KEY}`)
     //     .then((response) => {
     //         setVideoDetail(response)
@@ -25,9 +25,13 @@ const DetailsPage = () => {
     // }   
 
     useEffect(() => {
-        axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${params.videoId}&part=snippet,statistics&key=${API_KEY}`)
+        axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${params.videoId}&part=snippet,statistics&key=${API_KEY}`, {
+          params: {
+            type: "video"
+          }
+        })
         .then((response) => {
-            setVideoDetail(response.data)
+            setVideoDetail(response.data.items)
         })
         .catch((error) => {
             console.log(error)
