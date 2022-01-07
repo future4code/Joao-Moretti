@@ -6,7 +6,6 @@ export const Container = styled.div`
 `
 
 export const LotofacilContainer = styled.div`
-    border: 1px solid black;
     height: 100vh;
     width: 40vw;
     background-color: #6BEFA3;
@@ -15,7 +14,6 @@ export const LotofacilContainer = styled.div`
 export const SorteioContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    border: 1px solid red;
     height: 100vh;
     width: 60vw;
     background-color: #EFEFEF;

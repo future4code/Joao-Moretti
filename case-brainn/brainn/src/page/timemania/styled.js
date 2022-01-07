@@ -6,7 +6,6 @@ export const Container = styled.div`
 `
 
 export const TimemaniaContainer = styled.div`
-    border: 1px solid black;
     height: 100vh;
     width: 40vw;
     background-color: #6BEFA3;
@@ -14,7 +13,6 @@ export const TimemaniaContainer = styled.div`
 
 export const SorteioContainer = styled.div`
     display: flex;
-    border: 1px solid red;
     height: 100vh;
     width: 60vw;
     background-color: #EFEFEF;

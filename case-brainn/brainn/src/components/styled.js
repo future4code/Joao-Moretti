@@ -21,11 +21,12 @@ export const Button = styled.div`
     display: flex;
     font-size: 20px;
     color: white;
-    background-color: #60FFA4;
+    background-color: #6BEFA3;
     margin: 10px;
     min-width: 110px;
     padding: 16px;
     border: double white;
+    box-shadow: 5px 5px #888888;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
