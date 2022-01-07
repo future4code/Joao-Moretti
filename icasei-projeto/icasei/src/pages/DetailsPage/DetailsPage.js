@@ -1,55 +1,47 @@
-import { Button } from "@material-ui/core";
+import { Button} from "@material-ui/core";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import VideoDetailsCard from "../../components/videoDetailsCard/VideoDetailsCard";
 import { API_KEY } from "../../constants/apiKey";
-import { ButtonBackContainer, DetailsContainer, VideoContainer } from "./styled";
+import { ButtonBackContainer, DetailsContainer} from "./styled";
+import { CardDetails } from "./styledMaterial";
 
 const DetailsPage = () => {
 
-    const history = useHistory()
-    const params = useParams()
-    const [videoDetail, setVideoDetail] = useState({})
+  const history = useHistory()
+  const params = useParams()
+  const [videoDetail, setVideoDetail] = useState([])
 
+  const getDetailsVideo = () => {
 
-    console.log("deu bom" , videoDetail && videoDetail.snippet)
-    // const getDetailsVideo = () => {tems
-    //     axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${params.videoId}&part=snippet,statistics&key=${API_KEY}`)
-    //     .then((response) => {
-    //         setVideoDetail(response)
-    //     })
-    //     .catch((error) => {
-    //         console.log(error)
-    //     })
-    // }   
+    axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${params.videoId}&part=snippet,statistics&key=${API_KEY}`)
+      .then((response) => {
+        setVideoDetail(response.data.items)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
 
-    useEffect(() => {
-        axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${params.videoId}&part=snippet,statistics&key=${API_KEY}`, {
-          params: {
-            type: "video"
-          }
-        })
-        .then((response) => {
-            setVideoDetail(response.data.items)
-        })
-        .catch((error) => {
-            console.log(error)
-        })
-    }, [])
+  }
+
+  useEffect(() => {
+    getDetailsVideo()
+  }, [`https://www.googleapis.com/youtube/v3/videos?id=${params.videoId}&part=snippet,statistics&key=${API_KEY}`])
 
   return (
     <DetailsContainer>
-        <ButtonBackContainer> 
-            <Button variant="outlined" color="secondary" onClick={() => history.goBack()}> Voltar </Button>
-        </ButtonBackContainer>
+      <ButtonBackContainer>
+        <Button variant="outlined" color="secondary" onClick={() => history.goBack()}> Voltar </Button>
+      </ButtonBackContainer>
 
-        <VideoContainer>
-            <h2> {videoDetail && videoDetail.snippet && videoDetail.snippet.title} </h2>
-        </VideoContainer>
+      <CardDetails>
+        {videoDetail && videoDetail.map((item) => {
+          return <VideoDetailsCard key={item.id} item={item} />
+        })}
+      </CardDetails>
 
-
-      detalhes
     </DetailsContainer>
   );
 }
