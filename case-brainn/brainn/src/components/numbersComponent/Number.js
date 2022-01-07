@@ -5,7 +5,7 @@ const Number = (props) => {
     return <Container>
     <ButtonContainer>
         <TextContainer>
-        <p> {props.item} </p>
+        <p> <strong> {props.item} </strong> </p>
         </TextContainer>
     </ButtonContainer>
     </Container>

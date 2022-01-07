@@ -25,7 +25,7 @@ export const TextContainer = styled.div`
     margin: auto;
     p{
         font-family: 'The Nautigal', cursive;
-        font-size: 50px;
+        font-size: 25px;
     }
     
 `
