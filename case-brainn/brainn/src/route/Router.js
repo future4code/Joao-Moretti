@@ -19,19 +19,19 @@ const Router = () => {
                 <QuinaPage />
             </Route>
 
-            <Route exact path={"/lotofacil/:id"}>
+            <Route exact path={"/lotofacil"}>
                 <LotofacilPage />
             </Route>
 
-            <Route exact path={"/lotomania/:id"}>
+            <Route exact path={"/lotomania"}>
                 <LotomaniaPage />
             </Route>
 
-            <Route exact path={"/timemania/:id"}>
+            <Route exact path={"/timemania"}>
                 <TimemaniaPage />
             </Route>
 
-            <Route exact path={"/diaDeSorte/:id"}>
+            <Route exact path={"/diaDeSorte"}>
                 <DiaDeSortePage />
             </Route>
 

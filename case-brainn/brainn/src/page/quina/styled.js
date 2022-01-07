@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const QuinaContainer = styled.div`
     height: 100vh;
     width: 40vw;
-    background-color: #6BEFA3;
+    background-color: #712CFA;
 `
 
 export const SorteioContainer = styled.div`

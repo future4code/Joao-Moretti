@@ -6,18 +6,18 @@ export const goToQuina = (history) => {
     history.push(`/quina`)
 }
 
-export const goToLotofacil = (history, id) => {
-    history.push(`/lotofacil/${id}`)
+export const goToLotofacil = (history) => {
+    history.push(`/lotofacil`)
 }
 
-export const goToLotomania = (history, id) => {
-    history.push(`/lotomania/${id}`)
+export const goToLotomania = (history) => {
+    history.push(`/lotomania`)
 }
 
-export const goToTimemania = (history, id) => {
-    history.push(`/timemania/${id}`)
+export const goToTimemania = (history) => {
+    history.push(`/timemania`)
 }
 
-export const goToSorte = (history, id) => {
-    history.push(`/diaDeSorte/${id}`)
+export const goToSorte = (history) => {
+    history.push(`/diaDeSorte`)
 }

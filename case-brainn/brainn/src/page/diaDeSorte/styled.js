@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const SorteContainer = styled.div`
     height: 100vh;
     width: 40vw;
-    background-color: #6BEFA3;
+    background-color: #FAB082;
 `
 
 export const SorteioContainer = styled.div`

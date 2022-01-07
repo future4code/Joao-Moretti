@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const LotofacilContainer = styled.div`
     height: 100vh;
     width: 40vw;
-    background-color: #6BEFA3;
+    background-color: #D43FFF;
 `
 
 export const SorteioContainer = styled.div`

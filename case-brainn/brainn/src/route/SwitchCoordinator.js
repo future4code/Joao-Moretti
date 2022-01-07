@@ -1,11 +1,3 @@
-import React from "react"
-import { useHistory } from "react-router-dom"
-import DiaDeSortePage from "../page/diaDeSorte/DiaDeSortePage"
-import LotofacilPage from "../page/lotofacil/LotofacilPage"
-import LotomaniaPage from "../page/lotomania/LotomaniaPage"
-import MegaSenaPage from "../page/megaSena/MegaSenaPage"
-import QuinaPage from "../page/quina/QuinaPage"
-import TimemaniaPage from "../page/timemania/TimemaniaPage"
 import { goToLotofacil, goToLotomania, goToMegaSena, goToQuina, goToSorte, goToTimemania } from "./Coordinator"
 
 

@@ -21,7 +21,7 @@ export const Button = styled.div`
     display: flex;
     font-size: 20px;
     color: white;
-    background-color: #6BEFA3;
+    background-color: #E4E2E2;
     margin: 10px;
     min-width: 110px;
     padding: 16px;

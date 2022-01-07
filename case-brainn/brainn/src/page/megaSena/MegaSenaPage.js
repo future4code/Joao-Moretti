@@ -9,23 +9,14 @@ import { Container, MegaSenaContainer, SorteioContainer } from "./styled";
 
 const MegaSenaPage = () => {
 
-  const {loterias, loteriasConcursos} = useContext(GlobalStateContext)
-  
-  console.log("loterias", loterias)
-  console.log("loteriasConcurso", loteriasConcursos)
+  const { loteriasConcursos } = useContext(GlobalStateContext)
 
   const concursoId = loteriasConcursos && loteriasConcursos.find((item) => {
-    return  item.loteriaId === 0
+    return item.loteriaId === 0
   })
 
-  
-  console.log("concursoID", concursoId && concursoId.concursoId)
-
-  
   const numbers = useGetConcursos(`${BASE_URL}/concursos/${concursoId && concursoId.concursoId}`, [])
-  
 
-  console.log("AQ", numbers)
 
 
   return (
@@ -34,15 +25,15 @@ const MegaSenaPage = () => {
 
         <Buttons />
         <TitleContainer>
-        <img src="https://cdn-icons-png.flaticon.com/512/1442/1442924.png" alt={"trevo"}/>
-        <h1> MEGA-SENA </h1>
+          <img src="https://cdn-icons-png.flaticon.com/512/1442/1442924.png" alt={"trevo"} />
+          <h1> MEGA-SENA </h1>
         </TitleContainer>
-        
+
       </MegaSenaContainer>
 
       <SorteioContainer>
         {numbers && numbers.map((item) => {
-          return <Number item={item}/> 
+          return <Number item={item} />
         })}
       </SorteioContainer>
     </Container>
