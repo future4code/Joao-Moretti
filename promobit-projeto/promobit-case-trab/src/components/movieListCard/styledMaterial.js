@@ -19,10 +19,6 @@ export const MovieCard = styled(Card)({
 
 
 export const Title = styled(Typography)({
-    color: 'white',
-    // display: 'flex',
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    // textAlign: 'center'
+    color: 'white'
     
 })

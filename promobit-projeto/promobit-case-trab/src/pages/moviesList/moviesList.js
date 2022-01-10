@@ -13,7 +13,7 @@ const MovieList = () => {
 
   return (
     <div >
-      <Header />
+      <Header title={'home'}/>
       <MoviesListContainer>
         {movies && movies.map((movie) => {
           return <MovieListCard key={movie.id} movie={movie} />
